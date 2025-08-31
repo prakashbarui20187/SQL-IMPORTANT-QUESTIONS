@@ -81,3 +81,19 @@ column3 datatype,
 # <sub>19. How to drop (delete) a table? </sub>
 </br> **DROP TABLE** table_name;  
 </br> **Example** – DROP TABLE STUDENT;
+# <sub>20. What is the SQL `ALTER TABLE` statement used for? </sub>
+</br> **ALTER TABLE** is used to add, delete, or modify columns in an existing table. It can also add or drop constraints.
+# <sub>21. How to add a column to a table? </sub>
+</br> **ALTER TABLE** table_name **ADD** column_name datatype;  
+</br> **Example** – CREATE TABLE Customers ADD Email VARCHAR(255); { Adds “Email” column to Customers table }
+# <sub>22. How to drop (delete) a column from a table? </sub>
+</br> **ALTER TABLE** table_name **DROP COLUMN** column_name;  
+</br> **Example** – ALTER TABLE Customers DROP COLUMN Email; { Deletes “Email” column }
+# <sub>23. How to modify a column's data type? </sub> 
+</br> **ALTER TABLE** table_name **MODIFY COLUMN** column_name datatype;  
+</br> **Example** – ALTER TABLE Persons MODIFY COLUMN DateOfBirth YEAR; { Changes column type to YEAR }
+# <sub>24. How to rename a column? </sub> 
+</br> **ALTER TABLE** table_name **RENAME COLUMN** old_name **TO** new_name;  
+</br> **Example** – ALTER TABLE Persons RENAME COLUMN Address TO City; { Renames column Address → City }
+
+

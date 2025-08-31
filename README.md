@@ -1,10 +1,9 @@
 # <SUB>1. SQL: Structured Query Language, used to access and manipulate data.</SUB>
 # <SUB>2. SQL used CRUD operations to communicate with DB.</SUB>
-<sub>
 </br>1. CREATE - execute INSERT statements to insert new tuple into the relation.
 </br>2. READ - Read data already in the relations.
 </br>3. UPDATE - Modify already inserted data in the relation.
-</br>4. DELETE - Delete specific data point/tuple/row or multiple rows. </sub>
+</br>4. DELETE - Delete specific data point/tuple/row or multiple rows.
 3. SQL is not DB, is a query language.
 4. What is RDBMS? (Relational Database Management System)
 1. Software that enable us to implement designed relational model.

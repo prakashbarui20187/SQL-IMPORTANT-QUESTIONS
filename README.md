@@ -95,5 +95,8 @@ column3 datatype,
 # <sub>24. How to rename a column? </sub> 
 </br> **ALTER TABLE** table_name **RENAME COLUMN** old_name **TO** new_name;  
 </br> **Example** – ALTER TABLE Persons RENAME COLUMN Address TO City; { Renames column Address → City }
+# <sub>25. How to rename a table? </sub>
+</br> **ALTER TABLE** old_table_name **RENAME TO** new_table_name;  
+</br> **Example** – ALTER TABLE Customers RENAME TO Clients; { Renames table Customers → Clients }
 
 

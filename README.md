@@ -15,33 +15,47 @@
 </br>SQL is Structured Query language used to perform CRUD operations in R-DB, while MySQL is a RDBMS used to
 store, manage and administrate DB (provided by itself) using SQL.
 # <SUB>7. SQL DATA TYPES
-</br>-In SQL DB, data is stored in the form of tables.
-</br>-Data can be of different types, like INT, CHAR etc
-</br>CHAR - string(0-255), string with size = (0, 255], e.g., CHAR(251)
-</br>VARCHAR- string(0-255)
-</br>TINYTEXT-String(0-255)
-</br>TEXT-string(0-65535)
-</br>BLOB-string(0-65535)
-</br>MEDIUMTEXT-string(0-16777215)
-</br>MEDIUMBLOB-string(0-16777215)
-</br>LONGTEXT- string(0-4294967295)
-</br>LONGBLOB- string(0-4294967295)
-</br>TINYINT- integer(-128 to 127)
-</br>SMALLINT- integer(-32768 to 32767)
-</br>MEDIUMINT- integer(-8388608 to 8388607)
-</br>INT- integer(-2147483648 to 2147483647)
-</br>BIGINT- integer (-9223372036854775808 to
-</br>9223372036854775807)
-</br>FLOAT- Decimal with precision to 23 digits
-</br>DOUBLE- Decimal with 24 to 53 digits
-</br>DECIMAL- Double stored as string
-</br>DATE- YYYY-MM-DD
-</br>DATETIME- YYYY-MM-DD HH:MM:SS
-</br>TIMESTAMP- YYYYMMDDHHMMSS
-</br>TIME- HH:MM:SS
-</br>ENUM- One of the preset values
-</br>SET- One or many of the preset values
-</br>BOOLEAN - 0/1
+# 📌 MySQL Data Types Quick Reference
+
+## 🔹 String Data Types
+- </br> **CHAR(n)** Fixed-length string (0–255), e.g., CHAR(251)
+- </br> **VARCHAR(n)** Variable-length string (0–65535 depending on row size), e.g., VARCHAR(255)
+- </br> **TINYTEXT** String up to 255 characters
+- </br> **TEXT** String up to 65,535 characters (64 KB)
+- </br> **MEDIUMTEXT** String up to 16,777,215 characters (16 MB)
+- </br> **LONGTEXT** String up to 4,294,967,295 characters (4 GB)
+- </br> **TINYBLOB** Binary string up to 255 bytes
+- </br> **BLOB** Binary string up to 65,535 bytes (64 KB)
+- </br> **MEDIUMBLOB** Binary string up to 16 MB
+- </br> **LONGBLOB** Binary string up to 4 GB
+- </br> **ENUM** One value from a preset list, e.g., ENUM('M','F','Other')
+- </br> **SET** One or many values from a preset list, e.g., SET('a','b','c')
+
+---
+
+## 🔹 Numeric Data Types
+- </br> **TINYINT** Integer (-128 to 127)
+- </br> **SMALLINT** Integer (-32,768 to 32,767)
+- </br> **MEDIUMINT** Integer (-8,388,608 to 8,388,607)
+- </br> **INT** Integer (-2,147,483,648 to 2,147,483,647)
+- </br> **BIGINT** Integer (-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
+- </br> **FLOAT** Approx. decimal with precision up to 23 digits
+- </br> **DOUBLE** Approx. decimal with precision 24 to 53 digits
+- </br> **DECIMAL** Exact fixed-point decimal (stored as string internally)
+
+---
+
+## 🔹 Date & Time Data Types
+- </br> **DATE** Format: `YYYY-MM-DD`
+- </br> **DATETIME** Format: `YYYY-MM-DD HH:MM:SS`
+- </br> **TIMESTAMP** Format: `YYYYMMDDHHMMSS`
+- </br> **TIME** Format: `HH:MM:SS`
+
+---
+
+## 🔹 Boolean Data Type
+- </br> **BOOLEAN** True/False (stored as 0 = False, 1 = True)
+
 # <SUB>8. Size: TINY < SMALL < MEDIUM < INT < BIGINT.</SUB>
 # <sub>9. Variable length Data types e.g., VARCHAR, are better to use as they occupy space equal to the actual data Size.</sub>
 # <sub>10. Values can also be unsigned e.g., INT UNSIGNED. </sub>

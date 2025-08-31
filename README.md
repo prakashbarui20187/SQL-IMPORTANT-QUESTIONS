@@ -6,10 +6,10 @@
 </br>4. DELETE - Delete specific data point/tuple/row or multiple rows.
 # <sub>3. SQL is not DB, is a query language.</sub>
 # <SUB>4. What is RDBMS? (Relational Database Management System)</SUB>
-1. Software that enable us to implement designed relational model.
-2. e.g., MySQL, MS SQL, Oracle, IBM etc.
-3. Table/Relation is the simplest form of data storage object in R-DB.
-4. MySQL is open-source RDBMS, and it uses SQL for all CRUD operations
+</br>1. Software that enable us to implement designed relational model.
+</br>2. e.g., MySQL, MS SQL, Oracle, IBM etc.
+</br>3. Table/Relation is the simplest form of data storage object in R-DB.
+</br>4. MySQL is open-source RDBMS, and it uses SQL for all CRUD operations
 5. MySQL used client-server model, where client is CLI or frontend that used services provided by MySQL server.
 6. Difference between SQL and MySQL
 1. SQL is Structured Query language used to perform CRUD operations in R-DB, while MySQL is a RDBMS used to

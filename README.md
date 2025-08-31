@@ -55,3 +55,6 @@ store, manage and administrate DB (provided by itself) using SQL.
 </br>3. **DROP**: delete table, DB, view.
 </br>4. **TRUNCATE**: remove all the tuples from the table.
 </br>5. **RENAME**: rename DB name, table name, column name etc
+# <sub> How to create a database?</SUB>
+</br> **CREATE DATABASE** database_name;
+</br> **Example**- CREATE DATABASE ORG; { HERE ORG IS A DATABASES NAME. }

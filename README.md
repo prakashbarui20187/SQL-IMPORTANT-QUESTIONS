@@ -17,3 +17,20 @@ store, manage and administrate DB (provided by itself) using SQL.
 # <SUB>SQL DATA TYPES
 </br>1. In SQL DB, data is stored in the form of tables.
 </br>2. Data can be of different types, like INT, CHAR etc
+</br>CHAR - string(0-255), string with size = (0, 255], e.g., CHAR(251)
+</br>VARCHAR- string(0-255)
+</br>TINYTEXT-String(0-255)
+</br>TEXT-string(0-65535)
+</br>BLOB-string(0-65535)
+</br>MEDIUMTEXT-string(0-16777215)
+</br>MEDIUMBLOB-string(0-16777215)
+</br>LONGTEXT- string(0-4294967295)
+</br>LONGBLOB- string(0-4294967295)
+</br>TINYINT- integer(-128 to 127)
+</br>SMALLINT- integer(-32768 to 32767)
+</br>MEDIUMINT- integer(-8388608 to 8388607)
+</br>INT- integer(-2147483648 to 2147483647)
+</br>BIGINT- integer (-9223372036854775808 to
+</br>9223372036854775807)
+</br>FLOAT- Decimal with precision to 23 digits
+</br>DOUBLE- Decimal with 24 to 53 digits

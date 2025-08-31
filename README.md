@@ -10,9 +10,9 @@
 </br>2. e.g., MySQL, MS SQL, Oracle, IBM etc.
 </br>3. Table/Relation is the simplest form of data storage object in R-DB.
 </br>4. MySQL is open-source RDBMS, and it uses SQL for all CRUD operations
-5. MySQL used client-server model, where client is CLI or frontend that used services provided by MySQL server.
-6. Difference between SQL and MySQL
-1. SQL is Structured Query language used to perform CRUD operations in R-DB, while MySQL is a RDBMS used to
+# <sub>5. MySQL used client-server model, where client is CLI or frontend that used services provided by MySQL server.</sub>
+# <sub>6. Difference between SQL and MySQL</sub>
+</br>SQL is Structured Query language used to perform CRUD operations in R-DB, while MySQL is a RDBMS used to
 store, manage and administrate DB (provided by itself) using SQL.
 SQL DATA TYPES (Ref: https://www.w3schools.com/sql/sql_datatypes.asp)
 1. In SQL DB, data is stored in the form of tables.

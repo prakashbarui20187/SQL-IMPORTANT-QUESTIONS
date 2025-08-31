@@ -15,8 +15,6 @@
 </br>SQL is Structured Query language used to perform CRUD operations in R-DB, while MySQL is a RDBMS used to
 store, manage and administrate DB (provided by itself) using SQL.
 # <SUB>7. SQL DATA TYPES
-# 📌 MySQL Data Types Quick Reference
-
 ## 🔹 String Data Types
 - </br> **CHAR(n)** Fixed-length string (0–255), e.g., CHAR(251)
 - </br> **VARCHAR(n)** Variable-length string (0–65535 depending on row size), e.g., VARCHAR(255)
@@ -30,9 +28,6 @@ store, manage and administrate DB (provided by itself) using SQL.
 - </br> **LONGBLOB** Binary string up to 4 GB
 - </br> **ENUM** One value from a preset list, e.g., ENUM('M','F','Other')
 - </br> **SET** One or many values from a preset list, e.g., SET('a','b','c')
-
----
-
 ## 🔹 Numeric Data Types
 - </br> **TINYINT** Integer (-128 to 127)
 - </br> **SMALLINT** Integer (-32,768 to 32,767)
@@ -42,17 +37,11 @@ store, manage and administrate DB (provided by itself) using SQL.
 - </br> **FLOAT** Approx. decimal with precision up to 23 digits
 - </br> **DOUBLE** Approx. decimal with precision 24 to 53 digits
 - </br> **DECIMAL** Exact fixed-point decimal (stored as string internally)
-
----
-
 ## 🔹 Date & Time Data Types
 - </br> **DATE** Format: `YYYY-MM-DD`
 - </br> **DATETIME** Format: `YYYY-MM-DD HH:MM:SS`
 - </br> **TIMESTAMP** Format: `YYYYMMDDHHMMSS`
 - </br> **TIME** Format: `HH:MM:SS`
-
----
-
 ## 🔹 Boolean Data Type
 - </br> **BOOLEAN** True/False (stored as 0 = False, 1 = True)
 

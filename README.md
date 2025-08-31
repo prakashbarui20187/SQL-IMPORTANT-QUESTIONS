@@ -55,6 +55,18 @@ store, manage and administrate DB (provided by itself) using SQL.
 </br>3. **DROP**: delete table, DB, view.
 </br>4. **TRUNCATE**: remove all the tuples from the table.
 </br>5. **RENAME**: rename DB name, table name, column name etc
-# <sub> How to create a database?</SUB>
+# <sub>12. How to create a database?</SUB>
 </br> **CREATE DATABASE** database_name;
-</br> **Example**- CREATE DATABASE ORG; { HERE ORG IS A DATABASES NAME. }
+</br> **Example** - CREATE DATABASE ORG; { HERE ORG IS A DATABASES NAME. }
+# <sub>13. How to show all existing databases? </sub>
+</br> **SHOW DATABASES;**
+# <sub>14. How to use/select a database? </sub>
+</br> **USE** database_name;  
+</br> **Example** – USE ORG;
+# <sub>15. How to create a table inside a database? </sub>
+</br> **CREATE TABLE** table_name (  
+column1 datatype,  
+column2 datatype,  
+column3 datatype,    
+);  
+</br> **Example** – CREATE TABLE STUDENT (ID INT, NAME VARCHAR(100), AGE INT)

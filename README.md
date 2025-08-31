@@ -4,7 +4,7 @@
 </br>2. READ - Read data already in the relations.
 </br>3. UPDATE - Modify already inserted data in the relation.
 </br>4. DELETE - Delete specific data point/tuple/row or multiple rows.
-3. SQL is not DB, is a query language.
+# <sub>3. SQL is not DB, is a query language.</sub>
 4. What is RDBMS? (Relational Database Management System)
 1. Software that enable us to implement designed relational model.
 2. e.g., MySQL, MS SQL, Oracle, IBM etc.

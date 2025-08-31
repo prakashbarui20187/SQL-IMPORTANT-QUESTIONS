@@ -1,5 +1,5 @@
 # <SUB>SQL-IMPORTANT-QUESTIONS</SUB>
-SQL: Structured Query Language, used to access and manipulate data.
+1. SQL: Structured Query Language, used to access and manipulate data.
 2. SQL used CRUD operations to communicate with DB.
   CREATE - execute INSERT statements to insert new tuple into the relation.
   READ - Read data already in the relations.

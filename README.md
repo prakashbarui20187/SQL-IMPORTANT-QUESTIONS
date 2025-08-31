@@ -15,8 +15,8 @@
 </br>SQL is Structured Query language used to perform CRUD operations in R-DB, while MySQL is a RDBMS used to
 store, manage and administrate DB (provided by itself) using SQL.
 # <SUB>SQL DATA TYPES
-</br>1. In SQL DB, data is stored in the form of tables.
-</br>2. Data can be of different types, like INT, CHAR etc
+</br>In SQL DB, data is stored in the form of tables.
+</br>Data can be of different types, like INT, CHAR etc
 </br>CHAR - string(0-255), string with size = (0, 255], e.g., CHAR(251)
 </br>VARCHAR- string(0-255)
 </br>TINYTEXT-String(0-255)

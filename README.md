@@ -98,5 +98,17 @@ column3 datatype,
 # <sub>25. How to rename a table? </sub>
 </br> **ALTER TABLE** old_table_name **RENAME TO** new_table_name;  
 </br> **Example** – ALTER TABLE Customers RENAME TO Clients; { Renames table Customers → Clients }
+# <sub>26. How to rename a database? </sub> 
+</br> MySQL does **not** support `RENAME DATABASE` directly.  
+</br> Instead, you must **create a new database**, then **move (or import/export) the tables** into it.
+1. **CREATE DATABASE** new_database;  
+2. **RENAME TABLE** old_database.table_name TO new_database.table_name;  
+   (Repeat for each table)  
+3. **DROP DATABASE** old_database; (after confirming data is moved)
+Example:  
+</br> CREATE DATABASE new_org;  
+</br> RENAME TABLE org.students TO new_org.students;  
+</br> DROP DATABASE org;
+
 
 

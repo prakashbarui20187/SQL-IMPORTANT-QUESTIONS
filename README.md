@@ -50,8 +50,8 @@ store, manage and administrate DB (provided by itself) using SQL.
 # <sub>10. Values can also be unsigned e.g., INT UNSIGNED. </sub>
 # <sub>Types of SQL commands: <sub>
 </br>**DDL (data definition language): defining relation schema.**
-1. CREATE: create table, DB, view.
-2. ALTER TABLE: modification in table structure. e.g, change column datatype or add/remove columns.
-3. DROP: delete table, DB, view.
-4. TRUNCATE: remove all the tuples from the table.
-5. RENAME: rename DB name, table name, column name etc
+1.**CREATE**: create table, DB, view.
+2.**ALTER TABLE**: modification in table structure. e.g, change column datatype or add/remove columns.
+3.**DROP**: delete table, DB, view.
+4.**TRUNCATE**: remove all the tuples from the table.
+5.**RENAME**: rename DB name, table name, column name etc

@@ -70,3 +70,14 @@ column2 datatype,
 column3 datatype,    
 );  
 </br> **Example** – CREATE TABLE STUDENT (ID INT, NAME VARCHAR(100), AGE INT)
+# <sub>16. How to show all tables in the selected database? </sub>
+</br> **SHOW TABLES;**
+# <sub>17. How to describe the structure of a table? </sub>
+</br> **DESCRIBE** table_name;  
+</br> **Example** – DESCRIBE STUDENT;
+# <sub>18. How to drop (delete) a database? </sub>
+</br> **DROP DATABASE** database_name;  
+</br> **Example** – DROP DATABASE ORG;
+# <sub>19. How to drop (delete) a table? </sub>
+</br> **DROP TABLE** table_name;  
+</br> **Example** – DROP TABLE STUDENT;

@@ -42,3 +42,13 @@ store, manage and administrate DB (provided by itself) using SQL.
 </br>ENUM- One of the preset values
 </br>SET- One or many of the preset values
 </br>BOOLEAN - 0/1
+# <SUB>8. Size: TINY < SMALL < MEDIUM < INT < BIGINT.</SUB>
+# <sub>9. Variable length Data types e.g., VARCHAR, are better to use as they occupy space equal to the actual data Size.</sub>
+# <sub>10. Values can also be unsigned e.g., INT UNSIGNED. </sub>
+# <sub>Types of SQL commands: <sub>
+</br>* DDL (data definition language): defining relation schema.
+1. CREATE: create table, DB, view.
+2. ALTER TABLE: modification in table structure. e.g, change column datatype or add/remove columns.
+3. DROP: delete table, DB, view.
+4. TRUNCATE: remove all the tuples from the table.
+5. RENAME: rename DB name, table name, column name etc

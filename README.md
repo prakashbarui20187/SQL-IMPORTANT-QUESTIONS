@@ -48,7 +48,7 @@ store, manage and administrate DB (provided by itself) using SQL.
 # <SUB>8. Size: TINY < SMALL < MEDIUM < INT < BIGINT.</SUB>
 # <sub>9. Variable length Data types e.g., VARCHAR, are better to use as they occupy space equal to the actual data Size.</sub>
 # <sub>10. Values can also be unsigned e.g., INT UNSIGNED. </sub>
-# <sub>Types of SQL commands: <sub>
+# <sub>11.Types of SQL commands: <sub>
 </br>**DDL (data definition language): defining relation schema.**
 </br>1. **CREATE**: create table, DB, view.
 </br>2 .**ALTER TABLE**: modification in table structure. e.g, change column datatype or add/remove columns.

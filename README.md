@@ -34,3 +34,11 @@ store, manage and administrate DB (provided by itself) using SQL.
 </br>9223372036854775807)
 </br>FLOAT- Decimal with precision to 23 digits
 </br>DOUBLE- Decimal with 24 to 53 digits
+</br>DECIMAL- Double stored as string
+</br>DATE- YYYY-MM-DD
+</br>DATETIME- YYYY-MM-DD HH:MM:SS
+</br>TIMESTAMP- YYYYMMDDHHMMSS
+</br>TIME- HH:MM:SS
+</br>ENUM- One of the preset values
+</br>SET- One or many of the preset values
+</br>BOOLEAN - 0/1

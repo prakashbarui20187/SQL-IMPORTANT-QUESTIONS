@@ -173,9 +173,11 @@ Example:
  
  <details>
     
-   <summary><b> TYPES OF SQL CLAUSE: </b></summary>
+   <summary><b> TYPES OF SQL CLAUSE WIH OPERATORS: </b></summary>
    
-
+<details>
+<summary><b>SQL ORDER BY Questions</b></summary>
+   
 # <sub>36. What is the SQL WHERE clause? </sub>
 </br> The **WHERE** clause is used to **filter records**.  
 </br> It extracts only those records that fulfill a specified condition.
@@ -229,7 +231,7 @@ SELECT *
 FROM Customers  
 WHERE CustomerName BETWEEN 'A' AND 'M';
 ```
-
+</details>
 <details>
 <summary><b>SQL OPERATOR</b></summary>
 

@@ -1,7 +1,7 @@
 <details>
    <summary><b> SQL INTRODUCTIONS </b></summary>
 
-<b><SUB>1. SQL: Structured Query Language, used to access and manipulate data.</SUB></b>
+# <SUB>1. SQL: Structured Query Language, used to access and manipulate data.</SUB>
 # <SUB>2. SQL used CRUD operations to communicate with DB.</SUB>
 </br>1. CREATE - execute INSERT statements to insert new tuple into the relation.
 </br>2. READ - Read data already in the relations.
@@ -59,6 +59,10 @@ store, manage and administrate DB (provided by itself) using SQL.
 # <sub>10. Values can also be unsigned e.g., INT UNSIGNED. </sub>
 
 </details>
+
+<details>
+   
+<summary> <b>Types of SQL commands:</b></summary>
 
 # <sub>11.Types of SQL commands: <sub>
 </br>**DDL (data definition language): defining relation schema.**
@@ -132,6 +136,8 @@ Example:
 **Example:**  
 </br> DELETE FROM Students **WHERE** Age > 20; { Deletes only matching rows }  
 </br> **TRUNCATE TABLE** Students; { Deletes all rows }
+
+   </details>
 # <sub>30. What is DRL / DQL (Data Retrieval / Data Query Language)? </sub>
 </br> DRL / DQL is used to retrieve data from the database.  
 </br> The main keyword is **SELECT**.

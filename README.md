@@ -1,3 +1,6 @@
+<details>
+   <summary>SQL Wildcards Questions</summary>
+</details>
 # <SUB>1. SQL: Structured Query Language, used to access and manipulate data.</SUB>
 # <SUB>2. SQL used CRUD operations to communicate with DB.</SUB>
 </br>1. CREATE - execute INSERT statements to insert new tuple into the relation.

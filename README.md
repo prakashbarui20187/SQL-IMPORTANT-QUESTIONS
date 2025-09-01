@@ -229,6 +229,11 @@ SELECT *
 FROM Customers  
 WHERE CustomerName BETWEEN 'A' AND 'M';
 ```
+
+<details>
+<summary><b>SQL OPERATOR</b></summary>
+
+
 # <sub>47. What is the SQL IN operator? </sub>  
 </br> The **IN** operator allows you to specify multiple values in a **WHERE** clause.  
 </br> It is a shorthand for writing multiple **OR** conditions.  
@@ -303,7 +308,14 @@ WHERE column_name IS NULL;
 SELECT * 
 FROM Customers
 WHERE Address IS NULL;
+
 ```
+</details>
+
+
+<details>
+<summary><b>SQL WILDCARDS Questions</b></summary>
+   
 # <sub>55. What are SQL Wildcards? </sub>
 </br> SQL Wildcards are special symbols used with the **LIKE** operator to search for specific patterns in a column.  
 </br>They allow you to substitute one or more characters in string matching.  
@@ -368,6 +380,15 @@ SELECT * FROM Customers WHERE Country LIKE 'Spain';
 
 {} → Only supported in Oracle
 ```
+
+
+</details>
+
+
+
+<details>
+<summary><b>SQL Alise Questions</b></summary>
+   
 # <sub>62. What is a SQL Alias? </sub>
 </br> A SQL Alias is a **temporary name** given to a table or column to make it more readable.  
 </br> It exists only for the duration of the query.
@@ -397,7 +418,7 @@ FROM Customers AS c, Orders AS o
 WHERE c.CustomerName='Around the Horn' AND c.CustomerID=o.CustomerID;
 ```
 
-
+</detilas>
 
 
 <details>
@@ -405,12 +426,8 @@ WHERE c.CustomerName='Around the Horn' AND c.CustomerID=o.CustomerID;
 
 # <sub> What is the SQL ORDER BY keyword? </sub>
 </br> The **ORDER BY** keyword is used to **sort the result-set** in ascending or descending order.
-
----
-
 # <sub> What is the default sorting order in ORDER BY? </sub>
 </br> By default, **ORDER BY** sorts records in **ascending order (ASC)**.
-
 ```sql
 SELECT * FROM Products ORDER BY Price;
 ```

@@ -141,6 +141,32 @@ Example:
 </br> SELECT 55 + 11; { Returns 66 }  
 </br> SELECT NOW(); { Returns current date & time }  
 </br> SELECT UCASE('hello'); { Returns HELLO }
+# <sub>36. What is the SQL WHERE clause? </sub>
+</br> The **WHERE** clause is used to **filter records**.  
+</br> It extracts only those records that fulfill a specified condition.
+# <sub>37. Syntax of WHERE clause </sub>
+</br> **SELECT** column1, column2, ...  
+**FROM** table_name  
+**WHERE** condition;
+# <sub> Example 1 </sub>
+Select all customers from **Mexico**:
+</br> **SELECT** *  
+**FROM** Customers  
+**WHERE** Country = 'Mexico';
+# <sub> Example 2 </sub>
+Select the customer with **CustomerID = 1**:
+</br> **SELECT** *  
+**FROM** Customers  
+**WHERE** CustomerID = 1;
+# <sub> Example 3 </sub>
+Select all customers with **CustomerID > 80**:
+</br> **SELECT** *  
+**FROM** Customers  
+**WHERE** CustomerID > 80;
+# <sub> Can the WHERE clause be used only in SELECT? </sub>
+</br> ❌ No.  
+</br> The WHERE clause can also be used in **UPDATE, DELETE,** and other SQL statements.
+
 
 
 

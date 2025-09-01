@@ -299,6 +299,22 @@ HAVING condition
 ORDER BY column_name(s);
 ```
 
+# <sub> Example: Filter groups using HAVING</sub>
+```
+SELECT Country, COUNT(CustomerID) AS NumberOfCustomers
+FROM Customers
+GROUP BY Country
+HAVING COUNT(CustomerID) > 5;
+```   
+</br> This returns countries with more than 5 customers.
+# <sub> Can multiple conditions be used in HAVING?</sub>
+</br> ✅ Yes, multiple conditions can be combined using AND/OR:
+```
+SELECT Country, COUNT(CustomerID) AS NumberOfCustomers
+FROM Customers
+GROUP BY Country
+HAVING COUNT(CustomerID) > 5 AND COUNT(CustomerID) < 20;
+```
 </details>
 
 

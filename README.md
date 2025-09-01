@@ -163,12 +163,39 @@ Select all customers with **CustomerID > 80**:
 </br> **SELECT** *  
 **FROM** Customers  
 **WHERE** CustomerID > 80;
-# <sub> Can the WHERE clause be used only in SELECT? </sub>
+# <sub>38. Can the WHERE clause be used only in SELECT? </sub>
 </br> ❌ No.  
 </br> The WHERE clause can also be used in **UPDATE, DELETE,** and other SQL statements.
-
-
-
-
-
-
+# <sub>39. What is the SQL BETWEEN operator? </sub>  
+</br> The **BETWEEN** operator is used to filter the result set within a certain **range of values**.  
+</br> The values can be numbers, text, or dates.  
+# <sub>40. Syntax of BETWEEN </sub>  
+</br> **SELECT** column1, column2, ...  
+**FROM** table_name  
+**WHERE** column_name **BETWEEN** value1 **AND** value2;  
+# <sub>41. How to select students with Marks between 70 and 90? </sub>  
+</br> **SELECT** *  
+**FROM** Students  
+**WHERE** Marks BETWEEN 70 AND 90;  
+# <sub> How to select employees with Salary between 30,000 and 50,000? </sub>  
+</br> **SELECT** *  
+**FROM** Employees  
+**WHERE** Salary BETWEEN 30000 AND 50000;  
+# <sub> How to select customers whose Age is between 25 and 35? </sub>  
+</br> **SELECT** *  
+**FROM** Customers  
+**WHERE** Age BETWEEN 25 AND 35;  
+# <sub> How to select products where Price is NOT between 500 and 1000? </sub>  
+</br> **SELECT** *  
+**FROM** Products  
+**WHERE** Price NOT BETWEEN 500 AND 1000;  
+# <sub> How to select orders placed between '2025-01-01' and '2025-06-30'? </sub>  
+</br> **SELECT** *  
+**FROM** Orders  
+**WHERE** OrderDate BETWEEN '2025-01-01' AND '2025-06-30';  
+# <sub> Can BETWEEN be used with text values? </sub>  
+</br> ✅ Yes. For example:  
+```sql
+SELECT *  
+FROM Customers  
+WHERE CustomerName BETWEEN 'A' AND 'M';

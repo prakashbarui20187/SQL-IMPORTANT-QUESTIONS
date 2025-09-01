@@ -228,7 +228,50 @@ FROM table_name
 WHERE condition1 AND condition2;
 ```
 </br> **Example:**
-```SELECT * 
+```
+SELECT * 
 FROM Customers
 WHERE Country = 'Germany' AND City = 'Berlin';
+```
+# <sub>52. What is the SQL OR operator? </sub>
+</br> The OR operator is used to filter records when at least one condition is true.
+</br> **Syntax:**
+```
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 OR condition2;
+```
+</br> **Example:**
+```
+SELECT * 
+FROM Customers
+WHERE Country = 'Germany' OR Country = 'France';
+```
+# <sub>53. What is the SQL NOT operator? </sub>
+</br> The NOT operator is used to display records when the condition is not true.
+</br> **Syntax:**
+```
+SELECT column1, column2, ...
+FROM table_name
+WHERE NOT condition;
+```
+</br> **Example:**
+```
+SELECT * 
+FROM Customers
+WHERE Country NOT IN ('Germany', 'France', 'UK');
+```
+# <sub>54. What is the SQL IS NULL operator? </sub>
+</br> The IS NULL operator is used to test for empty (NULL) values in a column.
+</br> **Syntax:**
+```
+SELECT column1, column2, ...
+FROM table_name
+WHERE column_name IS NULL;
+```
+</br> **Example:**
+```
+SELECT * 
+FROM Customers
+WHERE Address IS NULL;
 ```

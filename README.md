@@ -210,6 +210,19 @@ UPDATE table_name
 SET col1 = value1, col2 = value2
 WHERE condition;
 ```
+# <sub> What is ON DELETE CASCADE and ON UPDATE CASCADE? </sub>
+</br> - ON DELETE CASCADE: If a referenced row is deleted in the parent table, all corresponding rows in the child table are also deleted.
+</br> - ON UPDATE CASCADE: If a referenced primary key is updated in the parent table, the foreign key values in the child table are automatically updated.
+```
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
+);
+IF YOU ARE NOT WRITE ON DELETE CASCADE OR ON UPDATE CASCADE YOU CANNOT UPDATE OR DELETE DATA FROM PARENT TABLE
+```
 
    </details>
 

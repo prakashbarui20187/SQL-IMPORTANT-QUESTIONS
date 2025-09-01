@@ -136,8 +136,6 @@ Example:
 **Example:**  
 </br> DELETE FROM Students **WHERE** Age > 20; { Deletes only matching rows }  
 </br> **TRUNCATE TABLE** Students; { Deletes all rows }
-
-   </details>
 # <sub>30. What is DRL / DQL (Data Retrieval / Data Query Language)? </sub>
 </br> DRL / DQL is used to retrieve data from the database.  
 </br> The main keyword is **SELECT**.
@@ -159,6 +157,9 @@ Example:
 </br> SELECT 55 + 11; { Returns 66 }  
 </br> SELECT NOW(); { Returns current date & time }  
 </br> SELECT UCASE('hello'); { Returns HELLO }
+
+ </details>
+ 
 # <sub>36. What is the SQL WHERE clause? </sub>
 </br> The **WHERE** clause is used to **filter records**.  
 </br> It extracts only those records that fulfill a specified condition.

@@ -79,6 +79,8 @@ store, manage and administrate DB (provided by itself) using SQL.
 
    
 <summary> <b>TYPES OF SQL commands:</b></summary>
+<details>
+   <summary> <b>DDL (data definition language):</b></summary>
 
 # <sub>11.Types of SQL commands: <sub>
 </br>**DDL (data definition language): defining relation schema.**
@@ -173,6 +175,7 @@ Example:
 </br> SELECT 55 + 11; { Returns 66 }  
 </br> SELECT NOW(); { Returns current date & time }  
 </br> SELECT UCASE('hello'); { Returns HELLO }
+</details>
 
  </details>
 

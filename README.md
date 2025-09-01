@@ -277,7 +277,6 @@ SELECT DISTINCT Country, City FROM Customers;
 </br> The **GROUP BY** statement groups rows that have the same values into **summary rows**.  
 </br> Often used with aggregate functions like **COUNT(), SUM(), AVG(), MIN(), MAX()**.
 # <sub> Syntax of GROUP BY</sub>
-</br>
 ```
 sql
 SELECT column_name(s)

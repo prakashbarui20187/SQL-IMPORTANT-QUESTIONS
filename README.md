@@ -176,7 +176,7 @@ Example:
    <summary><b> SQL CLAUSE & OPERATORS: </b></summary>
    
 <details>
-<summary><b>SQL ORDER BY Questions</b></summary>
+<summary><b>SQL CLAUSE</b></summary>
    
 # <sub>36. What is the SQL WHERE clause? </sub>
 </br> The **WHERE** clause is used to **filter records**.  

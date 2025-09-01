@@ -368,8 +368,34 @@ SELECT * FROM Customers WHERE Country LIKE 'Spain';
 
 {} → Only supported in Oracle
 ```
-#
+# <sub>62. What is a SQL Alias? </sub>
+</br> A SQL Alias is a **temporary name** given to a table or column to make it more readable.  
+</br> It exists only for the duration of the query.
 
+# <sub>63. How do you create a column alias in MySQL? </sub>
+</br> Use the **AS** keyword (optional in MySQL):  
+```sql
+SELECT CustomerID AS ID FROM Customers;
+-- Or without AS
+SELECT CustomerID ID FROM Customers;
+```
+# <sub>64. How do you give an alias with spaces in MySQL? </sub>
+</br> Surround the alias with **backticks (`)** in MySQL:
+```
+SELECT ProductName AS `My Great Products` FROM Products;
+```
+# <sub> Why are table aliases useful? </sub>
+</br> Table aliases are useful when:
+Using more than one table in a query
+Making long column or table names shorter
+Improving query readability
+```
+Example:
+
+SELECT o.OrderID, o.OrderDate, c.CustomerName
+FROM Customers AS c, Orders AS o
+WHERE c.CustomerName='Around the Horn' AND c.CustomerID=o.CustomerID;
+```
 </details>
 
 

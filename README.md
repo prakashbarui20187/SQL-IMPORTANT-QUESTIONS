@@ -80,9 +80,8 @@ store, manage and administrate DB (provided by itself) using SQL.
    
 <summary> <b>TYPES OF SQL commands:</b></summary>
 <details>
-   <summary> <b>DDL (data definition language):</b></summary>
-
-# <sub>11.Types of SQL commands: <sub>
+   <summary> <b>DDL</b></summary>
+   
 </br>**DDL (data definition language): defining relation schema.**
 </br>1. **CREATE**: create table, DB, view.
 </br>2 .**ALTER TABLE**: modification in table structure. e.g, change column datatype or add/remove columns.
@@ -177,6 +176,36 @@ Example:
 </br> SELECT UCASE('hello'); { Returns HELLO }
 </details>
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<details>
+   <summary> <b>DML</b></summary>
+
+   </details>
+
+   
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+   
+   <details>
+   <summary> <b>DCL</b></summary>
+
+   </details>
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+   
+   <details>
+   <summary> <b>TCL</b></summary>
+
+   </details>
  </details>
 
 

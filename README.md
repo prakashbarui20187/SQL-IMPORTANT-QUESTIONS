@@ -509,10 +509,40 @@ WHERE c.CustomerName='Around the Horn' AND c.CustomerID=o.CustomerID;
 
 </details>
 </details>
-
+---------------------------------------------------------------------------------------------------
 <details>
    
    <summary> <b>SQL KEY </b></summary> 
+
+<details>
+   
+   <summary> <b>PRIMARY KEY </b></summary> 
+   
+   # <sub> What is a PRIMARY KEY in SQL? </sub>
+</br> A **PRIMARY KEY** is a column (or a set of columns) that **uniquely identifies each row** in a table.  
+</br> Each table can have **only one primary key.**
+# <sub> Can a PRIMARY KEY column accept NULL values? </sub>
+</br> ❌ No. A **PRIMARY KEY column cannot contain NULL** values because it must uniquely identify every row.
+# <sub> Can a table have more than one PRIMARY KEY? </sub>
+</br> ❌ No. A table can have **only one PRIMARY KEY**, but it can consist of **multiple columns (composite primary key).**
+# <sub> What is a composite PRIMARY KEY? </sub>
+</br> A **composite primary key** is a primary key made up of **two or more columns** that together uniquely identify a row.
+
+```sql
+CREATE TABLE Orders (
+    OrderID INT,
+    ProductID INT,
+    Quantity INT,
+    PRIMARY KEY (OrderID, ProductID)
+);
+```
+      
+</details>
+
+
+
+
+
 
       
 </details>

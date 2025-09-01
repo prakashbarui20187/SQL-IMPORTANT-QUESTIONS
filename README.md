@@ -1,6 +1,9 @@
 <details>
-   <summary><b> SQL INTRODUCTIONS </b></summary>
 
+
+   
+   <summary><b> SQL INTRODUCTIONS </b></summary>
+   
 # <SUB>1. SQL: Structured Query Language, used to access and manipulate data.</SUB>
 # <SUB>2. SQL used CRUD operations to communicate with DB.</SUB>
 </br>1. CREATE - execute INSERT statements to insert new tuple into the relation.
@@ -20,6 +23,10 @@ store, manage and administrate DB (provided by itself) using SQL.
 </details>
 
 <details>
+
+
+
+
    
 <summary><b> SQL DATATYPE </b></summary>
 
@@ -61,8 +68,12 @@ store, manage and administrate DB (provided by itself) using SQL.
 </details>
 
 <details>
+
+
+
+
    
-<summary> <b>Types of SQL commands:</b></summary>
+<summary> <b>TYPES OF SQL commands:</b></summary>
 
 # <sub>11.Types of SQL commands: <sub>
 </br>**DDL (data definition language): defining relation schema.**

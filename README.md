@@ -219,3 +219,16 @@ WHERE CustomerName BETWEEN 'A' AND 'M';
 **FROM** Customers  
 **WHERE** Country NOT IN ('Germany', 'France', 'UK');  
 ```
+# <sub>51. What is the SQL AND operator? </sub>
+</br> The **AND** operator is used to filter records only when **all conditions** are true.  
+</br> **Syntax:**  
+```sql
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 AND condition2;
+```
+</br> **Example:**
+```SELECT * 
+FROM Customers
+WHERE Country = 'Germany' AND City = 'Berlin';
+```

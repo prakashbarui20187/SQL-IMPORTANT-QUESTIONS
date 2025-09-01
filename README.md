@@ -199,41 +199,23 @@ Select all customers with **CustomerID > 80**:
 SELECT *  
 FROM Customers  
 WHERE CustomerName BETWEEN 'A' AND 'M';
-
-# <sub> What is the SQL IN operator? </sub>  
+```
+# <sub>47. What is the SQL IN operator? </sub>  
 </br> The **IN** operator allows you to specify multiple values in a **WHERE** clause.  
 </br> It is a shorthand for writing multiple **OR** conditions.  
-
----
-
-# <sub> What is the syntax of IN? </sub>  
+# <sub>48. What is the syntax of IN? </sub>  
 </br> **SELECT** column_name(s)  
 **FROM** table_name  
 **WHERE** column_name **IN** (value1, value2, ...);  
-
----
-
-# <sub> How to return all customers from 'Germany', 'France', or 'UK'? </sub>  
+# <sub>49. How to return all customers from 'Germany', 'France', or 'UK'? </sub>
+```
 </br> **SELECT** *  
 **FROM** Customers  
-**WHERE** Country IN ('Germany', 'France', 'UK');  
-
----
-
-# <sub> How to return all customers that are NOT from 'Germany', 'France', or 'UK'? </sub>  
+**WHERE** Country IN ('Germany', 'France', 'UK');
+```
+# <sub>50. How to return all customers that are NOT from 'Germany', 'France', or 'UK'? </sub>  
+```
 </br> **SELECT** *  
 **FROM** Customers  
 **WHERE** Country NOT IN ('Germany', 'France', 'UK');  
-
----
-
-# <sub> How to use IN with a subquery? </sub>  
-</br> ✅ IN can be used with a **subquery** inside the WHERE clause.  
-
-</br> Example: Return all customers that have an order in the Orders table:  
-
-```sql
-SELECT *  
-FROM Customers  
-WHERE CustomerID IN (SELECT CustomerID FROM Orders);
-
+```

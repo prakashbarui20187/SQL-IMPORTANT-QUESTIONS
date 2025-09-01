@@ -129,6 +129,18 @@ Example:
 # <sub>32. How to select specific columns from a table? </sub>
 </br> **SELECT** column1, column2 **FROM** table_name;  
 </br> **Example** – SELECT Name, Age FROM Students; { Fetches only Name and Age columns }
+# <sub>33. What is the order of execution in SELECT? </sub>
+</br> The order of execution is **from RIGHT to LEFT**.  
+</br> First, the **FROM** clause is executed, then the **SELECT** clause.
+# <sub>34. Can we use SELECT keyword without using FROM clause? </sub>
+</br> ✅ Yes, using **DUAL tables**.
+# <sub> What are DUAL tables? </sub>
+</br> DUAL tables are **dummy tables** created by MySQL (and Oracle).  
+</br> They help users to perform calculations or functions without referring to user-defined tables.
+# <sub>35. Example of SELECT without FROM (using DUAL) </sub>
+</br> SELECT 55 + 11; { Returns 66 }  
+</br> SELECT NOW(); { Returns current date & time }  
+</br> SELECT UCASE('hello'); { Returns HELLO }
 
 
 

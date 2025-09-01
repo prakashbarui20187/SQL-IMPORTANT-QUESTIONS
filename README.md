@@ -109,6 +109,18 @@ Example:
 </br> **CREATE** DATABASE new_org;  
 </br> **RENAME TABLE** org.students *TO** new_org.students;  
 </br> **DROP DATABASE** org;
+# <sub>27. What is the SQL `TRUNCATE` statement used for? </sub>
+</br> **TRUNCATE TABLE** is used to delete all rows from a table, but it keeps the table structure for future use.
+# <sub>28. How to truncate a table? </sub>
+</br> **TRUNCATE TABLE** table_name;  
+</br> **Example** – TRUNCATE TABLE Students; { Removes all records from Students table, but keeps the table }
+# <sub>29. What is the difference between `TRUNCATE` and `DELETE`? </sub>
+</br> **DELETE** – removes rows one by one and can use a **WHERE** condition.  
+</br> **TRUNCATE** – removes all rows instantly, does not support **WHERE**, and resets AUTO_INCREMENT counters (in MySQL).
+**Example:**  
+</br> DELETE FROM Students **WHERE** Age > 20; { Deletes only matching rows }  
+</br> **TRUNCATE TABLE** Students; { Deletes all rows }
+
 
 
 

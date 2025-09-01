@@ -159,7 +159,9 @@ Example:
 </br> SELECT UCASE('hello'); { Returns HELLO }
 
  </details>
- 
+ <details>
+   <summary><b> TYPES OF SQL CLAUSE: </b></summary>
+
 # <sub>36. What is the SQL WHERE clause? </sub>
 </br> The **WHERE** clause is used to **filter records**.  
 </br> It extracts only those records that fulfill a specified condition.
@@ -360,7 +362,7 @@ SELECT * FROM Customers WHERE Country LIKE 'Spain';
 ```
 #
 
-
+</details>
 
 
 

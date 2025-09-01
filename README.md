@@ -323,14 +323,22 @@ SELECT * FROM Customers WHERE CustomerName LIKE 'a__%';
 -- Names having 'r' in the second position
 SELECT * FROM Customers WHERE CustomerName LIKE '_r%';
 ```
-# <sub> 8. What happens if no wildcard is used with LIKE? </sub>
+# <sub>60. What happens if no wildcard is used with LIKE? </sub>
 </br> Without wildcards, the LIKE operator behaves like the = operator (exact match).
 ```
 ***Example:**
 
 SELECT * FROM Customers WHERE Country LIKE 'Spain';
 ```
-#
+# <sub>61. Are all wildcards supported in every SQL database? </sub>
+</br> ❌ No. Some wildcards are not supported in MySQL and PostgreSQL.
+```
+% and _ → Supported everywhere
+
+[], -, ^ → Not supported in MySQL/PostgreSQL
+
+{} → Only supported in Oracle
+```
 #
 
 

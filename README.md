@@ -275,3 +275,41 @@ SELECT *
 FROM Customers
 WHERE Address IS NULL;
 ```
+# <sub>55. What are SQL Wildcards? </sub>
+</br> SQL Wildcards are special symbols used with the **LIKE** operator to search for specific patterns in a column.  
+</br>They allow you to substitute one or more characters in string matching.  
+# <sub>56. Why are SQL Wildcards used? </sub>
+</br> Wildcards are used in the **WHERE** clause to perform flexible searches when you don’t know the exact value.  
+</br>They help find partial matches instead of exact matches.  
+# <sub>57. What does the % wildcard represent? </sub>
+</br> The **%** wildcard matches **zero or more characters**.  
+**Examples:**  
+```sql
+-- Names ending with 'es'
+SELECT * FROM Customers WHERE CustomerName LIKE '%es';
+
+-- Names containing 'mer'
+SELECT * FROM Customers WHERE CustomerName LIKE '%mer%';
+```
+# <sub>57. What does the _ wildcard represent? </sub>
+</br> The _ wildcard matches exactly one character.
+-- Any city ending with 'ondon'
+SELECT * FROM Customers WHERE City LIKE '_ondon';
+-- City starting with 'L' and ending with 'on'
+SELECT * FROM Customers WHERE City LIKE 'L___on';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

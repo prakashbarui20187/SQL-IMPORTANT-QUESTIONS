@@ -254,6 +254,41 @@ SELECT * FROM Customers ORDER BY Country, CustomerName;
 ```
 SELECT * FROM Customers ORDER BY Country ASC, CustomerName DESC;
 ```
+# <sub> What is the SQL SELECT DISTINCT statement? </sub>
+</br> The **SELECT DISTINCT** statement is used to return **only distinct (different) values** from a column.
+# <sub> Why do we use SELECT DISTINCT? </sub>
+</br> To avoid duplicate values in the result set and **list only unique entries**.
+# <sub> Syntax of SELECT DISTINCT</sub>
+```
+sql
+SELECT DISTINCT column1, column2, ...
+FROM table_name;
+
+```
+# <sub> Can SELECT DISTINCT be used on multiple columns?</sub>
+
+</br> ✅ Yes. It considers the combination of values across the listed columns as unique.
+```
+SELECT DISTINCT Country, City FROM Customers;
+```
+</br> Returns unique combinations of Country and City.
+
+# <sub> What is the SQL GROUP BY statement? </sub>
+</br> The **GROUP BY** statement groups rows that have the same values into **summary rows**.  
+</br> Often used with aggregate functions like **COUNT(), SUM(), AVG(), MIN(), MAX()**.
+# <sub> Syntax of GROUP BY</sub>
+</br>
+```
+sql
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+ORDER BY column_name(s);
+```
+
+
+
 </details>
 
 

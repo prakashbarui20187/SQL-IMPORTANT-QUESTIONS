@@ -1,6 +1,6 @@
 <details>
    <summary>SQL Wildcards Questions</summary>
-</details>
+
 # <SUB>1. SQL: Structured Query Language, used to access and manipulate data.</SUB>
 # <SUB>2. SQL used CRUD operations to communicate with DB.</SUB>
 </br>1. CREATE - execute INSERT statements to insert new tuple into the relation.
@@ -17,6 +17,8 @@
 # <sub>6. Difference between SQL and MySQL</sub>
 </br>SQL is Structured Query language used to perform CRUD operations in R-DB, while MySQL is a RDBMS used to
 store, manage and administrate DB (provided by itself) using SQL.
+</details>
+
 # <SUB>7. SQL DATA TYPES
 ## 🔹 String Data Types
 - </br> **CHAR(n)** Fixed-length string (0–255), e.g., CHAR(251)

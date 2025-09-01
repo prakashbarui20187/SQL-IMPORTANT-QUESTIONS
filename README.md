@@ -231,7 +231,17 @@ SELECT *
 FROM Customers  
 WHERE CustomerName BETWEEN 'A' AND 'M';
 ```
+# <sub> What is the SQL ORDER BY keyword? </sub>
+</br> The **ORDER BY** keyword is used to **sort the result-set** in ascending or descending order.
+# <sub> What is the default sorting order in ORDER BY? </sub>
+</br> By default, **ORDER BY** sorts records in **ascending order (ASC)**.
+```sql
+SELECT * FROM Products ORDER BY Price;
+```
+
 </details>
+
+
 <details>
 <summary><b>SQL OPERATOR</b></summary>
 
@@ -423,17 +433,6 @@ WHERE c.CustomerName='Around the Horn' AND c.CustomerID=o.CustomerID;
 </detilas>
 
 
-<details>
-<summary><b>SQL ORDER BY Questions</b></summary>
-
-# <sub> What is the SQL ORDER BY keyword? </sub>
-</br> The **ORDER BY** keyword is used to **sort the result-set** in ascending or descending order.
-# <sub> What is the default sorting order in ORDER BY? </sub>
-</br> By default, **ORDER BY** sorts records in **ascending order (ASC)**.
-```sql
-SELECT * FROM Products ORDER BY Price;
-```
-</details>
 
 
 

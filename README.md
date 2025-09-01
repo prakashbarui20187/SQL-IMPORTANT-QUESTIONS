@@ -285,8 +285,19 @@ WHERE condition
 GROUP BY column_name(s)
 ORDER BY column_name(s);
 ```
-
-
+# <sub> What is the SQL HAVING clause? </sub>
+</br> The **HAVING** clause is used to **filter groups** created by the **GROUP BY** statement.  
+</br> It is used because the **WHERE** clause **cannot filter aggregate results**.
+# <sub> Syntax of HAVING clause</sub>
+```
+sql
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+HAVING condition
+ORDER BY column_name(s);
+```
 
 </details>
 

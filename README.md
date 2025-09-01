@@ -558,7 +558,26 @@ CREATE TABLE Orders (
     PRIMARY KEY (OrderID, ProductID)
 );
 ```
-      
+
+# <sub> Can PRIMARY KEY be added after table creation? </sub>
+</br> ✅ Yes, using ALTER TABLE:
+```
+ALTER TABLE Students
+ADD PRIMARY KEY (StudentID);
+```
+# <sub> Can a PRIMARY KEY be dropped? </sub>
+</br> ✅ Yes, using ALTER TABLE:
+```
+ALTER TABLE Students
+DROP PRIMARY KEY;
+ ```
+# <sub> Why is PRIMARY KEY important? </sub>
+</br> - Ensures data integrity by uniquely identifying each row
+</br> - Used to create relationships between tables with foreign keys
+</br> - Helps in indexing and faster query performance
+
+
+
 </details>
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -567,25 +586,46 @@ CREATE TABLE Orders (
    
    <summary> <b>FOREGIN KEY </b></summary> 
    
-   # <sub> What is a PRIMARY KEY in SQL? </sub>
-</br> A **PRIMARY KEY** is a column (or a set of columns) that **uniquely identifies each row** in a table.  
-</br> Each table can have **only one primary key.**
-# <sub> Can a PRIMARY KEY column accept NULL values? </sub>
-</br> ❌ No. A **PRIMARY KEY column cannot contain NULL** values because it must uniquely identify every row.
-# <sub> Can a table have more than one PRIMARY KEY? </sub>
-</br> ❌ No. A table can have **only one PRIMARY KEY**, but it can consist of **multiple columns (composite primary key).**
-# <sub> What is a composite PRIMARY KEY? </sub>
-</br> A **composite primary key** is a primary key made up of **two or more columns** that together uniquely identify a row.
-
-```sql
+  # <sub> What is a FOREIGN KEY in SQL? </sub>
+</br> A **FOREIGN KEY** is a column (or set of columns) in one table that **references the PRIMARY KEY of another table**.  
+</br> It is used to maintain **referential integrity** between two tables.
+# <sub> Can a table have multiple FOREIGN KEYS? </sub>
+</br> ✅ Yes. A table can have **multiple foreign keys**, each referencing different tables.
+# <sub> Can a FOREIGN KEY accept NULL values? </sub>
+</br> ✅ Yes. A FOREIGN KEY column can contain **NULL** unless specified otherwise.
+# <sub> How to create a FOREIGN KEY while creating a table? </sub>
+```
+sql
 CREATE TABLE Orders (
-    OrderID INT,
-    ProductID INT,
-    Quantity INT,
-    PRIMARY KEY (OrderID, ProductID)
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    OrderDate DATE,
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
+  ```
+# <sub> How to add a FOREIGN KEY to an existing table? </sub>
+```
+ALTER TABLE Orders
+ADD CONSTRAINT FK_Customer
+FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID);
+```
+# <sub> How to delete a FOREIGN KEY? </sub>
+```
+ALTER TABLE Orders
+DROP FOREIGN KEY FK_Customer;
+```
+# <sub> What is ON DELETE CASCADE and ON UPDATE CASCADE? </sub>
+</br> - ON **DELETE CASCADE:** If a referenced row is deleted in the parent table, all corresponding rows in the child table are also deleted.
+</br> - ON **UPDATE CASCADE:** If a referenced primary key is updated in the parent table, the foreign key values in the child table are automatically updated.
+```
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
 );
 ```
-      
 </details>
 
 

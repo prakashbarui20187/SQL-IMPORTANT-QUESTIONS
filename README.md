@@ -173,7 +173,7 @@ Example:
  
  <details>
     
-   <summary><b> TYPES OF SQL CLAUSE WIH OPERATORS: </b></summary>
+   <summary><b> SQL CLAUSE & OPERATORS: </b></summary>
    
 <details>
 <summary><b>SQL ORDER BY Questions</b></summary>

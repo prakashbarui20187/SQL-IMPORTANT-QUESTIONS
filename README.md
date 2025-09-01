@@ -522,7 +522,6 @@ WHERE c.CustomerName='Around the Horn' AND c.CustomerID=o.CustomerID;
 
 
 
-</details>
 
 
 

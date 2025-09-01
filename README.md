@@ -238,8 +238,24 @@ WHERE CustomerName BETWEEN 'A' AND 'M';
 ```sql
 SELECT * FROM Products ORDER BY Price;
 ```
-
+# <sub> How do you sort records in descending order? </sub>
+</br> Use the DESC keyword to sort records from highest to lowest or Z to A:
+```
+SELECT * FROM Products ORDER BY Price DESC;
+SELECT * FROM Products ORDER BY ProductName DESC;
+```
+# <sub> How do you sort records by multiple columns? </sub>
+</br> List multiple columns separated by commas. Records are sorted by the first column, then by the next if there are duplicates:
+```
+SELECT * FROM Customers ORDER BY Country, CustomerName;
+```
+# <sub> How do you use both ASC and DESC in one query? </sub>
+</br> Specify the order for each column individually:
+```
+SELECT * FROM Customers ORDER BY Country ASC, CustomerName DESC;
+```
 </details>
+
 
 
 <details>

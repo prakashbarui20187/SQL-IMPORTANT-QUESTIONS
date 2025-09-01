@@ -316,7 +316,7 @@ WHERE Address IS NULL;
 
 
 <details>
-<summary><b>SQL WILDCARDS Questions</b></summary>
+<summary><b>SQL WILDCARDS</b></summary>
    
 # <sub>55. What are SQL Wildcards? </sub>
 </br> SQL Wildcards are special symbols used with the **LIKE** operator to search for specific patterns in a column.  
@@ -389,7 +389,7 @@ SELECT * FROM Customers WHERE Country LIKE 'Spain';
 
 
 <details>
-<summary><b>SQL Alise Questions</b></summary>
+<summary><b>SQL ALISE</b></summary>
    
 # <sub>62. What is a SQL Alias? </sub>
 </br> A SQL Alias is a **temporary name** given to a table or column to make it more readable.  

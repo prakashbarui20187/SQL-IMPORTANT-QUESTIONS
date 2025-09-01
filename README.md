@@ -18,8 +18,11 @@
 </br>SQL is Structured Query language used to perform CRUD operations in R-DB, while MySQL is a RDBMS used to
 store, manage and administrate DB (provided by itself) using SQL.
 </details>
+
 <details>
+   
 <summary><b> SQL DATATYPE </b></summary>
+
 # <SUB>7. SQL DATA TYPES
 ## 🔹 String Data Types
 - </br> **CHAR(n)** Fixed-length string (0–255), e.g., CHAR(251)
@@ -56,6 +59,7 @@ store, manage and administrate DB (provided by itself) using SQL.
 # <sub>10. Values can also be unsigned e.g., INT UNSIGNED. </sub>
 
 </details>
+
 # <sub>11.Types of SQL commands: <sub>
 </br>**DDL (data definition language): defining relation schema.**
 </br>1. **CREATE**: create table, DB, view.

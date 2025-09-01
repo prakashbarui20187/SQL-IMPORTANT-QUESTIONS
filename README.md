@@ -177,23 +177,23 @@ Select all customers with **CustomerID > 80**:
 </br> **SELECT** *  
 **FROM** Students  
 **WHERE** Marks BETWEEN 70 AND 90;  
-# <sub> How to select employees with Salary between 30,000 and 50,000? </sub>  
+# <sub>42. How to select employees with Salary between 30,000 and 50,000? </sub>  
 </br> **SELECT** *  
 **FROM** Employees  
 **WHERE** Salary BETWEEN 30000 AND 50000;  
-# <sub> How to select customers whose Age is between 25 and 35? </sub>  
+# <sub>43. How to select customers whose Age is between 25 and 35? </sub>  
 </br> **SELECT** *  
 **FROM** Customers  
 **WHERE** Age BETWEEN 25 AND 35;  
-# <sub> How to select products where Price is NOT between 500 and 1000? </sub>  
+# <sub>44. How to select products where Price is NOT between 500 and 1000? </sub>  
 </br> **SELECT** *  
 **FROM** Products  
 **WHERE** Price NOT BETWEEN 500 AND 1000;  
-# <sub> How to select orders placed between '2025-01-01' and '2025-06-30'? </sub>  
+# <sub>45. How to select orders placed between '2025-01-01' and '2025-06-30'? </sub>  
 </br> **SELECT** *  
 **FROM** Orders  
 **WHERE** OrderDate BETWEEN '2025-01-01' AND '2025-06-30';  
-# <sub> Can BETWEEN be used with text values? </sub>  
+# <sub>46. Can BETWEEN be used with text values? </sub>  
 </br> ✅ Yes. For example:  
 ```sql
 SELECT *  

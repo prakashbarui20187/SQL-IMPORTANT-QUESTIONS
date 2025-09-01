@@ -512,7 +512,7 @@ WHERE c.CustomerName='Around the Horn' AND c.CustomerID=o.CustomerID;
 
 <details>
    
-   <Summary> <b>SQL KEY </Summary> </b>
+   <summary> <b>SQL KEY </b></summary> 
 
       
 </details>

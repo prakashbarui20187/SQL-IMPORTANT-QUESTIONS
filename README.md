@@ -182,6 +182,35 @@ Example:
 <details>
    <summary> <b>DML</b></summary>
 
+   # <sub> What is DML in SQL? </sub>
+</br> **DML (Data Manipulation Language)** is used to **manipulate data** in existing tables.  
+</br> It includes **INSERT, UPDATE, DELETE, REPLACE** statements.
+# <sub> How to insert data into a table? </sub>
+```
+sql
+INSERT INTO table_name (col1, col2, col3)
+VALUES (v1, v2, v3), (val1, val2, val3);
+</br> ✅ You can insert single or multiple rows in one statement.
+```
+# <sub> What is the purpose of the SQL UPDATE statement? </sub>
+</br> The **UPDATE** statement is used to **modify existing data** in a table.
+# <sub> How do you update a single column value in a table? </sub>
+</br> Use the **SET** keyword with a **WHERE clause** to update a specific row:
+
+```
+sql
+UPDATE table_name
+SET column_name = value
+WHERE condition;
+```
+# <sub> How do you update multiple columns in a single query? </sub>
+ ✅ Multiple columns can be updated at once using commas:
+```
+UPDATE table_name
+SET col1 = value1, col2 = value2
+WHERE condition;
+```
+
    </details>
 
    

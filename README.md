@@ -386,9 +386,9 @@ SELECT ProductName AS `My Great Products` FROM Products;
 ```
 # <sub> Why are table aliases useful? </sub>
 </br> Table aliases are useful when:
-Using more than one table in a query
-Making long column or table names shorter
-Improving query readability
+</br>Using more than one table in a query,
+</br>Making long column or table names shorter,
+</br>Improving query readability,
 ```
 Example:
 

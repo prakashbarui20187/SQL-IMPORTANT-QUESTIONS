@@ -1,5 +1,5 @@
 <details>
-   <summary>SQL Wildcards Questions</summary>
+   <summary><b>SQL Wildcards Questions</b></summary>
 
 # <SUB>1. SQL: Structured Query Language, used to access and manipulate data.</SUB>
 # <SUB>2. SQL used CRUD operations to communicate with DB.</SUB>

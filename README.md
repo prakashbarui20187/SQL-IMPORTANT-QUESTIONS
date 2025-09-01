@@ -120,6 +120,16 @@ Example:
 **Example:**  
 </br> DELETE FROM Students **WHERE** Age > 20; { Deletes only matching rows }  
 </br> **TRUNCATE TABLE** Students; { Deletes all rows }
+# <sub>30. What is DRL / DQL (Data Retrieval / Data Query Language)? </sub>
+</br> DRL / DQL is used to retrieve data from the database.  
+</br> The main keyword is **SELECT**.
+# <sub>31. How to select all columns from a table? </sub>
+</br> **SELECT * FROM** table_name;  
+</br> **Example** – SELECT * FROM Students; { Fetches all columns and all rows from Students }
+# <sub>32. How to select specific columns from a table? </sub>
+</br> **SELECT** column1, column2 **FROM** table_name;  
+</br> **Example** – SELECT Name, Age FROM Students; { Fetches only Name and Age columns }
+
 
 
 

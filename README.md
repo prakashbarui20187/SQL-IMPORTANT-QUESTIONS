@@ -293,10 +293,45 @@ SELECT * FROM Customers WHERE CustomerName LIKE '%mer%';
 ```
 # <sub>57. What does the _ wildcard represent? </sub>
 </br> The _ wildcard matches exactly one character.
+```
 -- Any city ending with 'ondon'
 SELECT * FROM Customers WHERE City LIKE '_ondon';
 -- City starting with 'L' and ending with 'on'
 SELECT * FROM Customers WHERE City LIKE 'L___on';
+```
+# <sub>58. How is the [] wildcard used in SQL? </sub>
+</br> The [] wildcard matches any one character from inside the brackets.
+**Example:**
+```
+-- Names starting with b, s, or p
+SELECT * FROM Customers WHERE CustomerName LIKE '[bsp]%';
+```
+# <sub> 57. What does the - wildcard do? </sub>
+</br> The - wildcard specifies a range of characters inside brackets.
+**Example:**
+```
+-- Names starting with a–f
+SELECT * FROM Customers WHERE CustomerName LIKE '[a-f]%';
+```
+# <sub>59. Can SQL wildcards be combined? </sub>
+</br> ✅ Yes. Wildcards can be combined for more complex patterns.
+**Examples:**
+```
+-- Names starting with 'a' and at least 3 characters long
+SELECT * FROM Customers WHERE CustomerName LIKE 'a__%';
+
+-- Names having 'r' in the second position
+SELECT * FROM Customers WHERE CustomerName LIKE '_r%';
+```
+# <sub> 8. What happens if no wildcard is used with LIKE? </sub>
+</br> Without wildcards, the LIKE operator behaves like the = operator (exact match).
+```
+***Example:**
+
+SELECT * FROM Customers WHERE Country LIKE 'Spain';
+```
+#
+#
 
 
 

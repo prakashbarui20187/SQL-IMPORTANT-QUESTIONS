@@ -224,7 +224,7 @@ CREATE TABLE Orders (
 IF YOU ARE NOT WRITE ON DELETE CASCADE OR ON UPDATE CASCADE YOU CANNOT UPDATE OR DELETE DATA FROM PARENT TABLE
 ```
 # <sub> What is ON DELETE SET NULL? </sub>
-</br> - ON DELETE SET NULL: If a referenced row is deleted in the parent table,
+</br> - **ON DELETE SET NULL:** If a referenced row is deleted in the parent table,
 </br>the foreign key value in the child table is automatically set to **NULL** instead of being deleted.
 ```
 sql
@@ -235,9 +235,47 @@ CREATE TABLE Orders (
     ON DELETE SET NULL
 );
 ```
-</br>IF YOU ARE NOT WRITE ON DELETE SET NULL,
-</br> YOU CANNOT DELETE DATA FROM THE PARENT TABLE IF CHILD
-</br>ROWS EXIST, BECAUSE IT WILL BREAK THE FOREIGN KEY CONSTRAINT.
+</br>IF YOU ARE NOT WRITE **ON DELETE SET NULL**,
+</br> YOU CANNOT **DELETE DATA** FROM THE PARENT TABLE IF CHILD
+</br>ROWS EXIST, BECAUSE IT WILL BREAK THE **FOREIGN KEY CONSTRAINT**.
+# <sub> What is REPLACE in SQL? </sub>
+
+</br>**Primarily used for already present tuples (rows) in a table.**  
+</br>Works like an **UPDATE** if the row with the same **PRIMARY KEY** or **UNIQUE KEY** already exists
+</br>the old row will be deleted and replaced with the new one.  
+</br> - Works like an **INSERT** if there is no duplicate data — a new row will be inserted.  
+**Syntax Examples:**
+```
+sql
+-- Insert or replace a row into student table
+REPLACE INTO student (id, class) VALUES (4, 3);
+
+-- Alternative syntax using SET
+REPLACE INTO student 
+SET id = 4, class = 3;
+```
+# <sub>Difference Between UPDATE and DELETE in SQL? </sub>
+**Basic Definition**
+- **UPDATE** → Modifies existing records in a table.  
+- **DELETE** → Removes existing records from a table.  
+
+### 2. Effect on Data
+- **UPDATE** → Changes values of one or more columns for selected rows, but the rows remain in the table.  
+- **DELETE** → Removes the entire row(s) from the table.  
+### 3. Syntax
+```
+sql
+-- UPDATE Example
+UPDATE employees
+SET salary = 50000
+WHERE emp_id = 101;
+
+-- DELETE Example
+DELETE FROM employees
+WHERE emp_id = 101;
+```
+
+
 
 
 

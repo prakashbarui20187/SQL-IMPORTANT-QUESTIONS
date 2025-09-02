@@ -762,8 +762,38 @@ CREATE TABLE Orders (
 ```
 </details>
 
+<details>
+   
+   <summary> <b>SQL JOIN </b></summary> 
 
+<details>
+   
+   <summary> <b>INNER JOIN </b></summary> 
 
+   </details>
+   <details>
+   
+   <summary> <b>OUTER  JOIN </b></summary> 
+    <details>
+   
+   <summary> <b> LEFT JOIN </b></summary> 
+
+   </details>
+   <details>
+   
+   <summary> <b> RIGHT JOIN </b></summary> 
+
+   </details>
+   <details>
+   
+   <summary> <b> FULL JOIN </b></summary> 
+
+   </details>
+
+   </details>
+   
+   
+</details>
       
 </details>
 

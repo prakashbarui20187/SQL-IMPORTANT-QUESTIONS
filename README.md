@@ -223,6 +223,25 @@ CREATE TABLE Orders (
 );
 IF YOU ARE NOT WRITE ON DELETE CASCADE OR ON UPDATE CASCADE YOU CANNOT UPDATE OR DELETE DATA FROM PARENT TABLE
 ```
+# <sub> What is ON DELETE SET NULL? </sub>
+</br> - ON DELETE SET NULL: If a referenced row is deleted in the parent table,
+</br>the foreign key value in the child table is automatically set to **NULL** instead of being deleted.
+
+```sql
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+    ON DELETE SET NULL
+);
+</br> - IF YOU ARE NOT WRITE ON DELETE SET NULL, YOU CANNOT DELETE DATA FROM THE PARENT TABLE IF CHILD ROWS EXIST, BECAUSE IT WILL BREAK THE FOREIGN KEY CONSTRAINT.
+
+
+
+
+
+
+
 
    </details>
 

@@ -793,6 +793,16 @@ CREATE TABLE Orders (
    </details>
 
    </details>
+   <details>
+   
+   <summary> <b> CROSS JOIN </b></summary> 
+
+   </details>
+   <details>
+   
+   <summary> <b> SELF JOIN </b></summary> 
+
+   </details>
    
    
 </details>

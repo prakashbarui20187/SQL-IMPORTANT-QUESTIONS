@@ -255,7 +255,7 @@ REPLACE INTO student
 SET id = 4, class = 3;
 ```
 # <sub>Difference Between UPDATE and DELETE in SQL? </sub>
-**Basic Definition**
+### 1.Basic Definition
 - **UPDATE** → Modifies existing records in a table.  
 - **DELETE** → Removes existing records from a table.  
 

@@ -914,6 +914,34 @@ Result → 10 × 5 = 50 rows
    
    <summary> <b> SELF JOIN </b></summary> 
 
+   # <sub>1. What is a SELF JOIN?</sub>  
+</br>A SELF JOIN is a regular join but the table is joined with itself.
+</br>It is used when we want to compare rows within the same table.
+
+# <sub>2. When is SELF JOIN used?</sub> 
+```
+To find relationships among rows of the same table.
+Example: finding employees and their managers in the same employee table.
+Example: finding duplicate records in a table.
+```
+# <sub>3. Syntax of SELF JOIN</sub>  
+```
+sql
+SELECT column_list
+FROM table_name t1
+INNER JOIN table_name t2
+ON t1.common_column = t2.common_column;
+
+```
+# <sub>Example of SELF JOIN</sub>
+```
+SELECT e1.emp_name AS Employee, e2.emp_name AS Manager
+FROM employees e1
+INNER JOIN employees e2
+ON e1.manager_id = e2.emp_id;
+```
+
+
    </details>
    
    

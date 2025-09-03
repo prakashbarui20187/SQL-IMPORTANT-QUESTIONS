@@ -767,6 +767,18 @@ CREATE TABLE Orders (
 <details>
    
    <summary> <b>SQL JOIN </b></summary> 
+   
+   # <sub>MySQL Joining Tables</sub>
+
+</br>A **JOIN** clause is used to combine rows from two or more tables, based on a related column between them.  
+</br>It helps in retrieving meaningful data from multiple tables by establishing relationships us
+# <sub>Types of JOINs in MySQL</sub>
+</br>**1.INNER JOIN.**
+</br>**2.LEFT JOIN.**
+</br>**3.RIGHT JOIN.**
+</br>**4.FULL JOIN.**
+</br>**5.CROSS JOIN.**
+</br>**6.SELF JOIN.**
 
 <details>
    

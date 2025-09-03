@@ -839,9 +839,8 @@ INNER JOIN table3 ON table2.col = table3.col;
    # <sub>What is RIGHT JOIN in MySQL?</sub>
    </br>RIGHT JOIN returns all rows from the right table, and the matched rows from the left table.  
    </br>If there is no match, NULL is returned from the left side.
-   
-      ```
-   SELECT employees.emp_id, employees.name, departments.dept_name
+   ```
+SELECT employees.emp_id, employees.name, departments.dept_name
    FROM employees
    RIGHT JOIN departments
    ON employees.dept_id = departments.dept_id;

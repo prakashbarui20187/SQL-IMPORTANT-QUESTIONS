@@ -882,7 +882,33 @@ RIGHT JOIN departments d ON e.dept_id = d.dept_id;
    <details>
    
    <summary> <b> CROSS JOIN </b></summary> 
-
+   
+   # <sub>1. What is CROSS JOIN in MySQL?</sub> 
+   ```
+   CROSS JOIN returns the Cartesian product of two tables.
+It combines each row from the first table with all rows from the second table.
+```
+# <sub>2. What is the syntax of CROSS JOIN?</sub>  
+```
+sql
+SELECT column_list
+FROM table1
+CROSS JOIN table2;
+```
+# <sub>4. How many rows does CROSS JOIN return?</sub>
+```
+If table1 has M rows and table2 has N rows,  
+then CROSS JOIN returns M × N rows.  
+Example:
+Table1 → 10 rows
+Table2 → 5 rows
+Result → 10 × 5 = 50 rows
+```
+# <sub>Difference between CROSS JOIN and INNER JOIN?</sub>
+```
+- INNER JOIN → Returns only matching rows based on a condition.  
+- CROSS JOIN → Returns all possible row combinations (Cartesian product), regardless of match.
+```
    </details>
    <details>
    

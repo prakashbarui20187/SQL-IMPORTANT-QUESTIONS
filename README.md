@@ -783,7 +783,25 @@ CREATE TABLE Orders (
 <details>
    
    <summary> <b>INNER JOIN </b></summary> 
+   
+   # <sub>1. What is INNER JOIN in MySQL?</sub>  
+   </br>In MySQL, INNER JOIN returns rows that have matching values in both tables.
+   </br>If there is no match, that row will not be included in the result set.
+   # <sub>2. What is the syntax of INNER JOIN?</sub>  
+```
+sql
+-- INNER JOIN between two tables
+SELECT column_list
+FROM table1
+INNER JOIN table2
+ON table1.common_column = table2.common_column;
 
+-- INNER JOIN with three tables
+SELECT column_list
+FROM table1
+INNER JOIN table2 ON table1.col = table2.col
+INNER JOIN table3 ON table2.col = table3.col;
+```
    </details>
    <details>
    

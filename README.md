@@ -821,6 +821,7 @@ INNER JOIN table3 ON table2.col = table3.col;
    # <sub>3. What is LEFT JOIN in MySQL?</sub>  
    </br>LEFT JOIN returns all rows from the left table, and the matched rows from the right table.
    </br>If there is no match, NULL is returned from the right side.
+   
     **Example:**  
       ```
       sql

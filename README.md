@@ -851,6 +851,30 @@ SELECT employees.emp_id, employees.name, departments.dept_name
    <details>
    
    <summary> <b> FULL JOIN </b></summary> 
+   
+   # <sub>What is FULL JOIN in MySQL?</sub>
+   </br>MySQL does not support FULL OUTER JOIN directly.  
+   </br>It can be simulated using a combination of LEFT JOIN and RIGHT JOIN with UNION.  
+   ```
+SELECT e.emp_id, e.name, d.dept_name
+FROM employees e
+LEFT JOIN departments d ON e.dept_id = d.dept_id
+UNION
+SELECT e.emp_id, e.name, d.dept_name
+FROM employees e
+RIGHT JOIN departments d ON e.dept_id = d.dept_id;
+```
+# <sub>What is the difference between UNION and UNION ALL in FULL JOIN?</sub>
+```
+- UNION → Removes duplicate rows (only unique rows are returned).  
+- UNION ALL → Returns all rows including duplicates.  
+```
+# <sub>When should you use OUTER JOINS?</sub>
+```
+- Use LEFT JOIN → When you want all rows from the left table, even if no match exists.  
+- Use RIGHT JOIN → When you want all rows from the right table, even if no match exists.  
+- Use FULL JOIN → When you want all rows from both tables, with NULLs where no match exists.  
+```
 
    </details>
 

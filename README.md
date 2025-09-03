@@ -806,9 +806,30 @@ INNER JOIN table3 ON table2.col = table3.col;
    <details>
    
    <summary> <b>OUTER  JOIN </b></summary> 
+
+   # <sub>1. What is an OUTER JOIN in MySQL?</sub> 
+   </br>OUTER JOIN is used to return all records from one table and the matched records from another table.
+   </br>If no match is found, NULL values are returned for the missing side.
+   </br> **THREE** types of OUTER JOINS : -
+   </br>**1.LEFT JOIN.**
+   </br>**2.RIGHT JOIN.**
+   </br>**3.FULL JOIN.**
     <details>
    
    <summary> <b> LEFT JOIN </b></summary> 
+
+   # <sub>3. What is LEFT JOIN in MySQL?</sub>  
+   </br>LEFT JOIN returns all rows from the left table, and the matched rows from the right table.
+   </br>If there is no match, NULL is returned from the right side.
+    **Example:**  
+      ```
+      sql
+      SELECT employees.emp_id, employees.name, departments.dept_name
+      FROM employees
+      LEFT JOIN departments
+      ON employees.dept_id = departments.dept_id;
+      ```
+
 
    </details>
    <details>

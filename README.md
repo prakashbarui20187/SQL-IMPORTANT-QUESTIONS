@@ -830,9 +830,8 @@ INNER JOIN table3 ON table2.col = table3.col;
       LEFT JOIN departments
       ON employees.dept_id = departments.dept_id;
       ```
-
-
    </details>
+   
    <details>
    
    <summary> <b> RIGHT JOIN </b></summary> 
@@ -849,6 +848,7 @@ INNER JOIN table3 ON table2.col = table3.col;
    ```
 
    </details>
+
    <details>
    
    <summary> <b> FULL JOIN </b></summary> 

@@ -946,11 +946,12 @@ ON e1.manager_id = e2.emp_id;
 We can combine rows from two or more tables without explicitly using the `JOIN` keyword.  
 This method is called an **implicit join** (old-style join).
 ## 🔹 Syntax
-
-```sql
+```
+sql
 SELECT * 
 FROM table1, table2 
 WHERE condition;
+```
 
 
    </details>

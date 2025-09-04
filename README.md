@@ -941,6 +941,17 @@ INNER JOIN employees e2
 ON e1.manager_id = e2.emp_id;
 ```
 
+# <sub>Join Without Using JOIN Keywords</sub>
+
+We can combine rows from two or more tables without explicitly using the `JOIN` keyword.  
+This method is called an **implicit join** (old-style join).
+## 🔹 Syntax
+
+```sql
+SELECT * 
+FROM table1, table2 
+WHERE condition;
+
 
    </details>
    

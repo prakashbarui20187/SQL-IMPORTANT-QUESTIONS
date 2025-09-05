@@ -142,6 +142,24 @@ Example:
 </br> **CREATE** DATABASE new_org;  
 </br> **RENAME TABLE** org.students *TO** new_org.students;  
 </br> **DROP DATABASE** org;
+# <sub>27. How to add a column after a specific column? </sub>
+
+</br> In MySQL, you can use the ALTER TABLE ... ADD COLUMN ... AFTER ... syntax to place the new column at a specific location.
+</br> If you don’t specify AFTER, the new column will be added at the end of the table.
+```
+ALTER TABLE table_name
+ADD COLUMN new_column_name datatype AFTER existing_column_name;
+
+Example: Suppose you have an Employees table with columns:
+EmployeeID, FirstName, LastName, BirthDate, Photo, Notes
+To add a Gender column after BirthDate:
+ALTER TABLE Employees
+ADD COLUMN Gender TEXT AFTER BirthDate
+```
+
+
+
+
 # <sub>27. What is the SQL `TRUNCATE` statement used for? </sub>
 </br> **TRUNCATE TABLE** is used to delete all rows from a table, but it keeps the table structure for future use.
 # <sub>28. How to truncate a table? </sub>

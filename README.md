@@ -1088,6 +1088,47 @@ SELECT SUBSTRING_INDEX('123, Park Street, Kolkata', ',', 1) AS HouseNo;
 🔹 Output → 123
 ```
 
+# <sub> What is the UPPER() function in SQL? </sub>
+</br> - The **UPPER()** function converts all characters in a string to **uppercase**.  
+</br> - It is commonly used for **data standardization, validation, and case-insensitive comparisons**.  
+
+### ✅ Use Cases:
+- **Case-Insensitive Comparisons:** Make queries ignore case differences.  
+- **Standardizing Data:** Store or display names, codes, or IDs in consistent format.  
+- **Data Validation:** Ensure uniformity in user input or imported data.  
+
+### ✅ Syntax:
+```
+sql
+UPPER(string)
+
+-- With SELECT
+SELECT UPPER(column_name) AS upper_case_column
+FROM table_name;
+
+```
+
+# <sub> What is the LOWER() function in SQL? </sub>
+</br> - The **LOWER()** function converts all characters in a string to **lowercase**.  
+</br> - It is commonly used for **case-insensitive searches, data standardization, and validation**.  
+
+### ✅ Use Cases:
+- **Case-Insensitive Searches:** Find matches regardless of uppercase or lowercase letters.  
+- **Standardizing Data:** Store or display names, emails, or codes in consistent format.  
+- **Data Validation:** Ensure uniformity in user input or imported data.  
+
+### ✅ Syntax:
+```
+sql
+LOWER(string)
+
+-- With SELECT
+SELECT LOWER(column_name) AS lower_case_column
+FROM table_name;
+```
+```
+
+
 
 
    </details>

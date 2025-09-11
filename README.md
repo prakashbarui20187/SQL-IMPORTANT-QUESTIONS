@@ -1126,7 +1126,6 @@ LOWER(string)
 SELECT LOWER(column_name) AS lower_case_column
 FROM table_name;
 ```
-```
 
 
 

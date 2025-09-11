@@ -983,6 +983,7 @@ WHERE condition;
 
   <details>
    <summary> <b>SQL STRING OPERATION</b></summary>
+     
    # <sub> What is the LENGTH() function in SQL? </sub>
 </br> - The **LENGTH()** function is used to determine the number of characters in a string.  
 </br> - It is useful for data validation, checking empty values, and analyzing text length.

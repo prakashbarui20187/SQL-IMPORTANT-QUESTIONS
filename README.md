@@ -1057,6 +1057,38 @@ SELECT FirstName || ' ' || LastName AS FullName
 FROM Customers;
 ```
 
+# <sub> What is the SUBSTRING_INDEX() function in SQL? </sub>
+</br> - The **SUBSTRING_INDEX()** function splits a string by a specified delimiter and returns part of it.  
+</br> - It is very useful for extracting **first names, last names, domains in emails, or any text before/after a separator**.  
+
+---
+
+### ✅ Syntax
+```
+sql
+SUBSTRING_INDEX(string, delimiter, count)
+string → the column or text you want to split.
+delimiter → the character or string used to split (e.g., space ' ', comma ',', at '@').
+count →
+If positive → returns everything before the nth occurrence of the delimiter.
+If negative → returns everything after the nth occurrence.
+```
+# <sub> TAKING EXAPMLE ABD EXPLAIN, SUBSTRING_INDEX() function in SQL? </sub>
+```
+Example 1 : Extract domain from email
+
+SELECT 
+    EmailAddress,
+    SUBSTRING_INDEX(EmailAddress, '@', -1) AS Domain
+FROM Customers;
+🔹 If email is alex@gmail.com, output → gmail.com
+
+Example 2: Extract first part of an address
+SELECT SUBSTRING_INDEX('123, Park Street, Kolkata', ',', 1) AS HouseNo;
+🔹 Output → 123
+```
+
+
 
    </details>
       

@@ -1176,7 +1176,59 @@ FROM customers;
 If phone_number = '9876543210', RIGHT(phone_number, 4) gives '3210', and REVERSE() returns '0123'.
 
 ```
+# <sub> Using REPLACE() in SQL </sub>
+</br> - The **REPLACE()** function replaces all occurrences of a substring within a string.  
+</br> - It is commonly used for **substring replacement, removing characters, and data cleaning**.  
 
+### ✅ Use Cases:
+- **Substring Replacement:** Replace all occurrences of a specific substring with another substring.  
+- **Removing Characters:** Replace a substring with an empty string (`''`) to remove unwanted characters.  
+- **Data Cleaning:** Standardize or fix inconsistent values in a column.  
+
+### ✅ Syntax:
+```
+SELECT REPLACE(LOWER(email), '.com', '') AS cleaned_email
+FROM customers;
+```
+# <sub> Using SUBSTRING() in SQL </sub>
+</br> - The **SUBSTRING()** (or **SUBSTR()**) function extracts a specified number of characters from a particular position in a string.  
+</br> - It is commonly used for **substring extraction, data manipulation, and string formatting**.  
+
+### ✅ Use Cases:
+- **Substring Extraction:** Extract specific parts of a string by specifying the starting position and length.  
+- **Data Manipulation:** Modify or process parts of a string, such as extracting codes, IDs, or prefixes.  
+- **Formatting Data:** Standardize data by taking only relevant parts of a string.  
+
+### ✅ Syntax:
+```
+SELECT SUBSTRING(productSKU, 1, 7) AS productSKU
+FROM products;
+output : 'ABC1234'
+EXPLAIN : 
+productSKU = 'ABC1234567'
+SUBSTRING(string, position, length) extracts length characters starting from position.
+Here: position = 1 → start at the first character 'A'
+length = 7 → take 7 characters
+So the substring is:'ABC1234'
+'567' is not included because you only asked for 7 characters, and '567' are the 8th, 9th, and 10th characters.
+
+```
+# <sub> Using INSTR() in SQL </sub>
+</br> - The **INSTR()** function returns the **position of the first occurrence** of a substring within a string.  
+</br> - It is commonly used for **substring searching, boolean checks, and data manipulation**.  
+
+### ✅ Use Cases:
+- **Find Substring Position:** Determine the location of a substring within a string.  
+- **Boolean Check:** Check whether a string contains a certain substring (position > 0).  
+- **Data Manipulation:** Extract or replace substrings based on their position.  
+
+### ✅ Syntax:
+```
+SELECT emailaddress, INSTR(emailaddress, '@') AS at_position
+FROM customers;
+output:john.smith@email.com' '@' is the 11th character → at_position = 11
+
+```
 
 
 

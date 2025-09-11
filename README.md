@@ -1010,6 +1010,51 @@ SELECT TRIM(BOTH 'x' FROM 'xxxCodingNinjasxxx') AS trimmed_string;
 -- Example 2: Remove spaces from both ends
 SELECT TRIM(' Hello ') AS trimmed_string;
 -- Output: Hello
+
+```
+# <sub> What is the LTRIM() function in SQL? </sub>
+</br> - The LTRIM() function removes spaces (or specified characters) from the left side of a string.
+
+```
+SELECT LTRIM(' Hello ') AS trimmed_string;
+-- Output: 'Hello '
+```
+# <sub> What is the RTRIM() function in SQL? </sub>
+</br> - The RTRIM() function removes spaces (or specified characters) from the right side of a string.
+
+```
+SELECT RTRIM(' Hello ') AS trimmed_string;
+-- Output: ' Hello'
+```
+
+# <sub> What is the CONCAT() function in SQL? </sub>
+</br> - The **CONCAT()** function is used to join two or more strings into a single string.  
+</br> - It is very useful for **data cleaning, formatting, and transformation**.  
+
+### ✅ Common Use Cases:
+- **Displaying Full Names:** Join first name and last name.  
+- **Building File Paths:** Combine directory and file names.  
+- **Creating Messages:** Concatenate strings for custom notes.  
+- **Formatting Addresses:** Merge multiple address parts.  
+- **Combining Text and Numbers:** Generate labels or codes.  
+- **Generating Usernames:** Combine name parts dynamically.  
+
+```
+sql
+-- Basic Syntax
+CONCAT(string1, string2, ...);
+
+-- Example 1: Display full name
+SELECT CONCAT(FirstName, ' ', LastName) AS FullName
+FROM Customers;
+
+-- Example 2: Add label to customer ID
+SELECT CONCAT('Customer Number: ', CAST(CustomerKey AS CHAR)) AS CustomerLabel
+FROM Customers;
+
+-- Example 3: Alternative using || operator (works in PostgreSQL, Oracle, SQLite)
+SELECT FirstName || ' ' || LastName AS FullName
+FROM Customers;
 ```
 
 

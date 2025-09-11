@@ -1159,6 +1159,23 @@ SELECT LEFT(product_code, 3) AS first_three_chars
 FROM products;
 If product_code = 'ABC1234', the result will be 'ABC'.
 ```
+# <sub> Using REVERSE() in SQL </sub>
+</br> - The **REVERSE()** function reverses the order of characters in a string.  
+</br> - It is commonly used for **string manipulation, palindrome detection, and data transformation**.  
+
+### ✅ Use Cases:
+- **String Reversal:** Reverse the order of characters in a string.  
+- **Palindrome Detection:** Check if a string reads the same forwards and backwards.  
+- **Data Transformation:** Modify the order of characters for formatting or analysis.  
+
+### ✅ Syntax:
+```
+
+SELECT REVERSE(RIGHT(phone_number, 4)) AS reversed_string
+FROM customers;
+If phone_number = '9876543210', RIGHT(phone_number, 4) gives '3210', and REVERSE() returns '0123'.
+
+```
 
 
 

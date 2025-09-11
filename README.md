@@ -1127,6 +1127,39 @@ SELECT LOWER(column_name) AS lower_case_column
 FROM table_name;
 ```
 
+# <sub> Using RIGHT() in SQL </sub>
+</br> - The **RIGHT()** function extracts a specified number of characters from the **right side** of a string.  
+</br> - It is commonly used for **data cleaning, substring extraction, and formatting**.  
+
+### ✅ Use Cases:
+- **Extracting Substrings:** Get the last N characters of a string, e.g., last 4 digits of a phone number.  
+- **Data Cleaning:** Remove unwanted leading characters when combined with other string functions.  
+- **Formatting Data:** Standardize codes, IDs, or product numbers by extracting suffixes.  
+
+### ✅ Syntax:
+```
+sql
+SELECT RIGHT(product_code, 4) AS last_four_digits
+FROM products;
+If product_code = 'ABC1234', the result will be '1234'.
+```
+# <sub> Using LEFT() in SQL </sub>
+</br> - The **LEFT()** function extracts a specified number of characters from the **left side** of a string.  
+</br> - It is commonly used for **substring extraction, data formatting, and cleaning**.  
+
+### ✅ Use Cases:
+- **Extracting Substrings:** Get the first N characters of a string, e.g., country codes or ID prefixes.  
+- **Data Cleaning:** Remove unwanted trailing characters when combined with other string functions.  
+- **Formatting Data:** Standardize codes, IDs, or product numbers by extracting prefixes.  
+
+### ✅ Syntax:
+```
+sql
+SELECT LEFT(product_code, 3) AS first_three_chars
+FROM products;
+If product_code = 'ABC1234', the result will be 'ABC'.
+```
+
 
 
 

@@ -983,6 +983,34 @@ WHERE condition;
 
   <details>
    <summary> <b>SQL STRING OPERATION</b></summary>
+   # <sub> What is the LENGTH() function in SQL? </sub>
+</br> - The **LENGTH()** function is used to determine the number of characters in a string.  
+</br> - It is useful for data validation, checking empty values, and analyzing text length.
+     
+```
+     sql
+SELECT LENGTH(column_name) AS length_of_string
+FROM table_name;
+```
+
+# <sub> What is the TRIM() function in SQL? </sub>
+</br> - The **TRIM()** function removes leading and trailing spaces (or specified characters) from a string.  
+</br> - It is commonly used for **data cleaning** to ensure values are stored without unwanted spaces.
+
+```
+sql
+-- Syntax
+TRIM([{BOTH | LEADING | TRAILING} [trim_character] FROM] string);
+
+-- Example 1: Remove 'x' from both ends
+SELECT TRIM(BOTH 'x' FROM 'xxxCodingNinjasxxx') AS trimmed_string;
+-- Output: CodingNinjas
+
+-- Example 2: Remove spaces from both ends
+SELECT TRIM(' Hello ') AS trimmed_string;
+-- Output: Hello
+```
+
 
    </details>
       

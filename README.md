@@ -1073,7 +1073,7 @@ count →
 If positive → returns everything before the nth occurrence of the delimiter.
 If negative → returns everything after the nth occurrence.
 ```
-# <sub> TAKING EXAPMLE ABD EXPLAIN, SUBSTRING_INDEX() function in SQL? </sub>
+# <sub> TAKING EXAPMLE & EXPLAIN, SUBSTRING_INDEX() function in SQL? </sub>
 ```
 Example 1 : Extract domain from email
 

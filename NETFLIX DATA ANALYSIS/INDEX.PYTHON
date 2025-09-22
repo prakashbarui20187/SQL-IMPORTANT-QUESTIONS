@@ -1,1 +1,15 @@
 
+Q1: What is the most frequent genre in the dataset?
+👉 The most frequent genre is Drama, which appears more than 14% of the time among 19 other genres.
+
+Q2: Which genre has the highest votes?
+👉 Drama again dominates, accounting for 25.5% of the dataset with popular votes (6520 movies). It also holds more than 18.5% of overall popularity among fans.
+
+Q3: What movie got the highest popularity? What’s its genre?
+👉 Spider-Man: No Way Home has the highest popularity in the dataset. Its genres are Action, Adventure, and Science Fiction.
+
+Q4: What movie got the lowest popularity? What’s its genre?
+👉 The United States, Thread has the lowest popularity in the dataset. Its genres include Music, Drama, War, Sci-Fi, and History.
+
+Q5: Which year has the most filmed movies?
+👉 The year 2020 has the highest number of movies filmed in the dataset.
